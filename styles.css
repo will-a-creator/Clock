@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(4, 4, 110);
+}
+.datetime{
+    color: #fff;
+    background: darkblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 400px;
+    padding: 20px 10px;
+    border: 4px solid #2E94E3;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(226, 206, 206, 0.1));
+    transition: 0.55s;
+    transition-property: background, box-shadow;
+}
+.datetime:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+}
+.date{
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time{
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px; 
+    font-weight: 600;
+    text-align: center;
+}
+.time span:last-child{
+    background:  #2E94E3;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 2px;
+}
